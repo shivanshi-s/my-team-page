@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins:wght@300&display=swap');
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: 'Poppins', sans-serif;
+}
+.title {
+   font-family: 'PT Serif', sans-serif;
+   font-weight: 700;
+   font-size: 24px;
+   /* line-height: 48px; */
+   padding-bottom: 3rem;
+   width: 50%;
+   margin-right: 2rem;
+}
+.subtitle {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   flex-wrap: wrap;
+}
+.subtitle h3{
+   font-weight: 600;
+   padding-top: 0.5rem;
+   padding-bottom: 1rem;
+   font-size: 16px;
+}
+.subtitle p {
+   font-size: 1rem;
+   line-height: 21px;
+   font-weight: 400;
+   padding-bottom: 3rem;
+   font-family: 'Poppins', sans-serif;
+}
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 4rem;
+}
+/* cards */
+.cards {
+   display: flex;
+   justify-content: space-between;
+   max-width: 700px;
+   flex-wrap: wrap;
+   gap: 0.10rem;
+}
+.pic-container {
+   margin: 0 2rem;
+}
+.pic-container:nth-child(even) {
+   margin-top: 2.5rem;
+}
+.avatar {
+   display: flex;
+}
+.pic-title {
+   display: flex;
+   font-size: 0.75rem;
+}
+.job-title p {
+   display: block;
+   writing-mode: vertical-rl;
+}
+.crew img {
+   display: block;
+   max-width: 8rem;
+}
+.name {
+   padding-top: 0.75rem;
+   padding-bottom: 2rem;
+   font-weight: 600;
+   line-height: 21px;
+   font-size: 1rem;
+}
+
+@media screen and (max-width:650px) {
+   nav {
+      flex-direction: column;
+   }
+}
+
+@media screen and (max-width:470px) {
+   .cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+}
